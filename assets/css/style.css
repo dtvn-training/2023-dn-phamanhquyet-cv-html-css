@@ -36,6 +36,10 @@ button {
     border: 0;
 }
 
+span {
+    text-align: justify;
+}
+
 body {
     min-height: 100vh;
     font-weight: 400;
@@ -146,12 +150,14 @@ ul {
     list-style: none;
 }
 
-.information-box-row {
+.information-box-row,
+.information-box-row-skill {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #414042;
 
 }
+
 
 .information-box-row .information-icon {
     border-right: 1px solid #414042;
@@ -269,6 +275,7 @@ ul {
 .information-actitvity-sub-title {
     font-size: 16px;
     font-weight: 400;
+    text-align: justify;
 }
 
 .information-project-detail-technology {
@@ -278,7 +285,7 @@ ul {
 .information-project-detail a {
     text-decoration: none;
     color: #414042;
-    padding-left: 20px;
+
 }
 
 .information-project-detail span {
@@ -318,6 +325,18 @@ ul {
     color: #414042;
 }
 
+.ellipsis-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.breakdown-text {
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+}
+
 @media screen and (max-width:900px) {
     .container {
         display: flex;
@@ -335,5 +354,12 @@ ul {
         position: relative;
         margin-left: -30px;
         margin-top: 25px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .information-box-row-skill {
+        display: flex;
+        flex-direction: column;
     }
 }
