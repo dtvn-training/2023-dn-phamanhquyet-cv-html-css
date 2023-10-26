@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(https://db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+    font-family: 'Poppins', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    min-height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: #fff;
+}
+
+.container .left-side {
+    position: relative;
+    /* border-right: 1px solid #ccc; */
+
+}
+
+.profileText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profileText .name {
+    font-size: 2.875em;
+    color: #414042;
+    margin-top: 11px;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Circular Std Bold";
+}
+
+.profileText .position {
+    font-size: 1.9375em;
+    font-weight: 400;
+}
+
+.profileText .avatar {
+    margin-top: 15px;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.profileText .avatar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-side .professional-information {
+    margin-top: 25px;
+}
+
+.left-side .professional-information p {
+    text-align: justify;
+    font-weight: 400;
+}
+
+.left-side .information-box {
+    margin: 25px 0;
+    font-size: 0.875em;
+    font-weight: 400;
+
+}
+
+.information-box-header {
+    border-top: 1px solid #414042;
+    border-bottom: 1px solid #414042;
+    padding: 5px 0;
+}
+
+.information-box-header .text {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-family: "Circular Std Bold";
+    margin-left: 10px;
+    font-size: 1.375em;
+}
+
+.information-box-header .icon {
+    font-size: 20px;
+}
+
+.information-box-header .icon img {
+    height: 20px;
+    width: 20px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.information-box-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #414042;
+
+}
+
+.information-box-row .information-icon {
+    border-right: 1px solid #414042;
+    padding: 6px 15px 6px 10px;
+    min-width: 60px;
+    margin: 6px;
+}
+
+
+.information-box-row .information-text {
+    padding: 6px 0 6px 10px;
+    margin: 6px 0 0 10px;
+    opacity: 80%;
+}
+
+.no-border-and-have-mg {
+    border: none;
+    margin: 10px 0;
+}
+
+.information-box-row .information-left,
+.information-box-row .information-rignt {
+    width: 50%;
+}
+
+.information-box .information-awards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    line-height: 2;
+}
+
+.information-box .information-awards .award-time {
+    opacity: 70%;
+}
+
+
+.container .right-side {
+    position: relative;
+    padding-left: 30px;
+}
+
+.information-education,
+.information-education:after,
+.information-experience,
+.information-experience:after,
+.information-project {
+    margin-top: 10px;
+    position: relative;
+    padding-left: 20px;
+    min-height: 85%;
+    margin-bottom: 25px;
+
+}
+
+.information-education .information-education-title,
+.information-experience .information-experience-title,
+.information-project .information-project-title,
+.information-actitvity-title {
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+
+.information-education-detail ul li,
+.information-experience-detail ul li,
+.information-project-detail-technology {
+    list-style-type: disc;
+}
+
+.information-education-detail,
+.information-experience-detail {
+    padding-left: 20px;
+}
+
+
+.information-education:before,
+.information-experience:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #414042;
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+}
+
+.information-education:after,
+.information-experience:after {
+    content: "";
+    border-left: 2px solid #414042;
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+.information-experience .information-experience-title,
+.information-project .information-project-title,
+.information-project-detail,
+.information-actitvity-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-experience .information-experience-title .information-experience-sub-title {
+    font-size: 16px;
+    opacity: 70%;
+    font-weight: 400;
+
+}
+
+.information-project .information-project-title .information-project-sub-title,
+.information-actitvity-sub-title {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.information-project-detail-technology {
+    padding-left: 20px;
+}
+
+.information-project-detail a {
+    text-decoration: none;
+    color: #414042;
+    padding-left: 20px;
+}
+
+.information-project-detail span {
+    font-weight: 500;
+}
+
+.footer {
+    min-height: 100px;
+    max-width: 1600px;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer .contact-method-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.rounded-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-method-list .contact-method a {
+    text-decoration: none;
+    color: #414042;
+}
