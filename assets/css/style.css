@@ -137,7 +137,7 @@ body {
 }
 
 .information-box-header .icon {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .information-box-header .icon img {
@@ -204,14 +204,20 @@ ul {
 .information-education,
 .information-education:after,
 .information-experience,
-.information-experience:after,
-.information-project {
+.information-experience:after {
     margin-top: 10px;
     position: relative;
     padding-left: 20px;
     min-height: 85%;
     margin-bottom: 25px;
 
+}
+
+.information-project {
+    margin-top: 10px;
+    position: relative;
+    min-height: 85%;
+    margin-bottom: 25px;
 }
 
 .information-education .information-education-title,
@@ -232,6 +238,7 @@ ul {
 .information-education-detail,
 .information-experience-detail {
     padding-left: 20px;
+    text-align: justify;
 }
 
 
@@ -331,10 +338,18 @@ ul {
     white-space: nowrap;
 }
 
-.breakdown-text {
+.breakdown-text-left {
     word-wrap: break-word;
     overflow: hidden;
     white-space: normal;
+    text-align: left;
+}
+
+.breakdown-text-right {
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: normal;
+    text-align: right;
 }
 
 @media screen and (max-width:900px) {
@@ -347,7 +362,8 @@ ul {
     .contact-method-list {
         display: flex;
         flex-direction: column;
-
+        justify-content: space-around;
+        min-height: 300px;
     }
 
     .container .right-side {
@@ -355,6 +371,7 @@ ul {
         margin-left: -30px;
         margin-top: 25px;
     }
+
 }
 
 @media screen and (max-width:1300px) {
